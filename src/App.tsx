@@ -33,9 +33,6 @@ const App = () => {
       });
   }, []);
 
-  console.log({ placesRaw });
-  console.log({ placesFiltered });
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value;
     const regex = new RegExp(value, "gi");
@@ -48,7 +45,6 @@ const App = () => {
   return (
     <Container>
       <Box display="flex" p={3}>
-        {/* TextField here ⬇️ */}
         <TextField
           id="outlined-basic"
           label="City/State"
